@@ -1,1 +1,0 @@
-# Mamad-cloud.github.io

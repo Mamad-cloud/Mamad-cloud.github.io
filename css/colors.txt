@@ -1,0 +1,8 @@
+#1a2332 --> navbar
+#9fef00 --> lime --> focused element
+#141d2b --> search box bg
+#111927 --> sidebar bg
+#a4b1cd --> search icon and other icons
+#caffff --> highlighted text
+
+

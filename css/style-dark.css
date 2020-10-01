@@ -1,0 +1,43 @@
+@media(prefers-color-scheme: dark){
+	
+}
+
+
+
+#header-icon{
+	background-color: yellow;
+
+}
+
+
+/* global / overall image styles 
+	.image-w img, .image-w svg {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	}
+
+	svg path { /* good preset for svg / sets 'fill' to casdade like color 
+	    fill: currentColor;
+	}  
+
+	.bitmap-logo {  things you might do with you bitmap 
+	    max-width: 200px;
+	    transform: rotate(10deg);
+	    opacity: .2;
+	    border: 2px solid red;
+	}
+
+	.svg-logo { /* svg 
+	    max-width: 300px;
+	}
+
+	.svg-box { /* parts of the svg 
+	    color: blue;
+	}
+
+	.svg-squigle {
+	    color: red;
+	}
+
+	*/
