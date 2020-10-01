@@ -17,7 +17,7 @@
 }
 
 .text-light{
-	color: #c4bbf0 !important;
+	color: #e4e2ee !important;
 }
 
 .shadow {
@@ -32,6 +32,8 @@
 .logo-bg{
 	background-color: white;
 	border-radius: 3px;
+	width: 28px;
+	height: 28px;
 }
 
 
@@ -39,10 +41,18 @@
 	box-shadow: 0 0 0 0.2rem #927fbf;
 }
 
+@media (max-width: 768px) {
+	.blog-header-logo{
+		font-size: 1.5rem;
+	}
+}
+
 #header-icon{
 	background-color: yellow;
 
 }
+
+
 
 
 /* global / overall image styles 
