@@ -22,7 +22,7 @@
 	background-color: #363b4e !important;
 }
 
-div.jumbotron[class=".bg-dark"]{
+div.jumbotron, div.bg-dark{
 	background-color: #262936 !important;
 }
 
@@ -35,15 +35,15 @@ div.jumbotron[class=".bg-dark"]{
 }
 
 .navbar-shadow{
-	border-bottom: 1px solid #4f3b78;
+	border-bottom: 1px solid #624d8d;
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.308) !important;
 }
   
 .logo-bg{
 	background-color: white;
-	border-radius: 3px;
-	width: 28px;
-	height: 28px;
+	border-radius: 0.3rem;
+	width: 30px;
+	height: 30px;
 }
 .logo-border{
 	border: 1px solid #c4bbf0;
