@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- <div>Icons made by 
+		<a href="http://www.freepik.com/" title="Freepik">Freepik</a> 
+		from 
+		<a href="https://www.flaticon.com/" title="Flaticon">
+		 www.flaticon.com</a>
+	</div> -->
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+	<!-- Bootstrap CSS (online) -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	
+	<!-- Bootstrap CSS -->
+	<!--<link rel="stylesheet" type="text/css" href="bootstrap-4.5.2/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--<link rel="stylesheet" type="text/css" href="scss/style.scss">-->
+
+	<link rel="stylesheet" type="text/css" href="css/style-dark.css">
+	<link rel="stylesheet" type="text/css" href="css/style-light.css">
+	
+    <meta name="description" 
+    content="Artificial Inteligence and it's applications in radiology and medicine">
+	<meta name="author" content="Mohamad Fatahi">
+	
+	<script src="js/jquery.min.js"></script>
+
+	<script src="js/main.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="media/x-rays.svg" />
+	<title>RadioBlog</title>
+</head>
+<body class="bg-dark text-light">
+
+  	
+
+
+
+	<header class="blog-header py-3 px-3 bg-dark">
+		<div class="row flex-nowrap justify-content-between align-items-center">
+			<div class="col-4 pt-1">
+			  <a class="text-light subscribe-btn" data-toggle="modal" data-target="#subscribe-popup">Subscribe</a>
+			</div>
+			<div id="header-logo" class="col-4 text-center">	
+			  <a class="blog-header-logo text-light" href="#">RadioBlog</a>
+			</div>
+			<div class="col-4 d-flex justify-content-end align-items-center">
+			  <a id="signup-btn" class="btn btn-sm btn-outline-secondary text-light" href="#">Sign up</a>
+			</div>
+		  </div>
+	</header>
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark navbar-shadow">
+		<a class="navbar-brand" href="index.html">
+			<div class="logo-border h-auto w-auto p-1">
+				<div class="logo-bg">
+					<img src="media/x-ray-dark.svg" alt="RadioBlog" width="30" height="30" class="d-inline-block align-top">
+				</div>
+			</div>
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	  
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		  <ul class="navbar-nav mr-auto">
+			<li class="nav-item active">
+			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item dropdown">
+			  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Theme
+			  </a>
+			  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				<a class="dropdown-item" href="#">Light</a>
+				<a class="dropdown-item" href="#">Dark</a>
+				<div class="dropdown-divider"></div>
+				<a class="dropdown-item" href="#">Dark/Lime</a>
+			  </div>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+			</li>
+		  </ul>
+		  <form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-search my-2 my-sm-0" type="submit">Search</button>
+		  </form>
+		</div>
+	</nav>
+	<div class="container">
+        <form>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault01">First name</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefault02">Last name</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="validationDefaultUsername">Username</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                  </div>
+                  <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="validationDefault03">City</label>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault04">State</label>
+                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="validationDefault05">Zip</label>
+                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                <label class="form-check-label" for="invalidCheck2">
+                  Agree to terms and conditions
+                </label>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit">Submit form</button>
+          </form>
+		
+
+		
+	</div>
+		
+		<main role="main" class="container">
+		  
+		
+		</main><!-- /.container -->
+		
+		<footer class="blog-footer fixed-bottom">
+		  <p>Copyright 2020 &copy;</p>
+		  <p>
+			<a href="#">Back to top</a>
+		  </p>
+		</footer>
+	</div>
+	
+
+	
+
+	
+	<script type="text/javascript">
+		// $.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()); 
+		// if ($.browser.chrome) {
+		// 	$(document).ready( () => {
+		// 		alert("chrome");
+		// 	});
+		// }
+		// else{
+		// 	$(document).ready( () => {
+		// 		alert("not chrome");
+		// 	});
+			
+		// }
+
+
+		$(document).ready(() =>{
+
+            $(document.getElementById('#signup-btn').focus(true));
+
+
+			$('#subscribe-submit-btn').click(e =>{
+				e.preventDefault();
+				function postData(input) {
+    				$.ajax({
+        				type: "POST",
+       					url: "file:///../py/input.py",
+        				data: { param: input },
+        				success: callbackFunc
+    				});
+				}		
+
+				function callbackFunc(response) {
+    				// do something with the response
+    				console.log(response);
+				}
+				var subscriber_name = $(document.getElementById('subscriber-name')).val();
+				var subscriber_email = $(document.getElementById('subscriber-email')).val();
+
+
+				//postData('data to process');
+				if(subscriber_email == '' || subscriber_name == ''){
+					alert('please enter ur name and email');
+				}
+				else{
+					console.log("subscriber-name: " +subscriber_name);
+					console.log("subscriber-email: " +subscriber_email);
+					//$('.modal').css('display','none');
+					//window.setTimeout(()=>{
+					//	location.reload(true);
+					//}, 2000);
+					
+					subscribeUser(subscriber_name, subscriber_email);
+					
+					alert('thanks for subscribing');
+				}
+
+				//postData('asadasd');
+
+
+
+				
+			});
+		});
+				
+				
+	</script>
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+</body>
+</html>
