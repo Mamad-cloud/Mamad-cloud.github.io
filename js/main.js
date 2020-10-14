@@ -14,3 +14,4 @@ function subscribeUser(name, email) {
     subList.push(subscr);
     console.log(subList);
 }
+

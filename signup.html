@@ -29,7 +29,7 @@
 	
 	<script src="js/jquery.min.js"></script>
 
-	<script src="js/main.js"></script>
+	<script src="js/register-page.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="media/x-rays.svg" />
 	<title>RadioBlog</title>
 </head>
@@ -42,13 +42,11 @@
 	<header class="blog-header py-3 px-3 bg-dark">
 		<div class="row flex-nowrap justify-content-between align-items-center">
 			<div class="col-4 pt-1">
-			  <a class="text-light subscribe-btn" data-toggle="modal" data-target="#subscribe-popup">Subscribe</a>
 			</div>
 			<div id="header-logo" class="col-4 text-center">	
 			  <a class="blog-header-logo text-light" href="#">RadioBlog</a>
 			</div>
 			<div class="col-4 d-flex justify-content-end align-items-center">
-			  <a id="signup-btn" class="btn btn-sm btn-outline-secondary text-light" href="#">Sign up</a>
 			</div>
 		  </div>
 	</header>
@@ -68,7 +66,7 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		  <ul class="navbar-nav mr-auto">
 			<li class="nav-item active">
-			  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item">
 			  <a class="nav-link" href="#">Link</a>
@@ -95,38 +93,39 @@
 		</div>
 	</nav>
 	<div class="container">
+		<h2 class="border-bottom py-3">Sign Up And Become A RadioBloger !!</h2>
         <form>
             <div class="form-row">
               <div class="col-md-4 mb-3">
                 <label for="validationDefault01">First name</label>
-                <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Mark" required>
+                <input type="text" class="form-control" id="first-name" placeholder="First name" value="" required>
               </div>
               <div class="col-md-4 mb-3">
                 <label for="validationDefault02">Last name</label>
-                <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Otto" required>
+                <input type="text" class="form-control" id="last-name" placeholder="Last name" value="" required>
               </div>
               <div class="col-md-4 mb-3">
-                <label for="validationDefaultUsername">Username</label>
+                <label for="username">Username</label>
                 <div class="input-group">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroupPrepend2">@</span>
                   </div>
-                  <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                  <input type="text" class="form-control" id="username" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
                 </div>
               </div>
             </div>
             <div class="form-row">
               <div class="col-md-6 mb-3">
-                <label for="validationDefault03">City</label>
-                <input type="text" class="form-control" id="validationDefault03" placeholder="City" required>
+                <label for="city">City</label>
+                <input type="text" class="form-control" id="city" placeholder="City" required>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationDefault04">State</label>
-                <input type="text" class="form-control" id="validationDefault04" placeholder="State" required>
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" placeholder="State" required>
               </div>
               <div class="col-md-3 mb-3">
-                <label for="validationDefault05">Zip</label>
-                <input type="text" class="form-control" id="validationDefault05" placeholder="Zip" required>
+                <label for="zip-code">Zip</label>
+                <input type="text" class="form-control" id="zip-code" placeholder="Zip" required>
               </div>
             </div>
             <div class="form-group">
@@ -137,7 +136,7 @@
                 </label>
               </div>
             </div>
-            <button class="btn btn-primary" type="submit">Submit form</button>
+            <button class="btn btn-primary" id="register-btn" type="submit">Submit form</button>
           </form>
 		
 
@@ -162,67 +161,27 @@
 
 	
 	<script type="text/javascript">
-		// $.browser.chrome = /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()); 
-		// if ($.browser.chrome) {
-		// 	$(document).ready( () => {
-		// 		alert("chrome");
-		// 	});
-		// }
-		// else{
-		// 	$(document).ready( () => {
-		// 		alert("not chrome");
-		// 	});
-			
-		// }
+		
 
 
 		$(document).ready(() =>{
-
-            $(document.getElementById('#signup-btn').focus(true));
-
-
-			$('#subscribe-submit-btn').click(e =>{
+			$('#register-btn').click(e => {
 				e.preventDefault();
-				function postData(input) {
-    				$.ajax({
-        				type: "POST",
-       					url: "file:///../py/input.py",
-        				data: { param: input },
-        				success: callbackFunc
-    				});
-				}		
+				var fname = $('#first-name').val();
+				var lname = $('#last-name').val();
+				var username = $('#username').val();
+				var city = $('#city').val();
+				var state = $('#state').val();
+				var zip_code = $('#zip-code').val();
 
-				function callbackFunc(response) {
-    				// do something with the response
-    				console.log(response);
-				}
-				var subscriber_name = $(document.getElementById('subscriber-name')).val();
-				var subscriber_email = $(document.getElementById('subscriber-email')).val();
+				radiobloger_addr = new Address(city, state, zip_code);
+				radiobloger = new RadioBloger(fname, lname, username, radiobloger_addr);
 
 
-				//postData('data to process');
-				if(subscriber_email == '' || subscriber_name == ''){
-					alert('please enter ur name and email');
-				}
-				else{
-					console.log("subscriber-name: " +subscriber_name);
-					console.log("subscriber-email: " +subscriber_email);
-					//$('.modal').css('display','none');
-					//window.setTimeout(()=>{
-					//	location.reload(true);
-					//}, 2000);
-					
-					subscribeUser(subscriber_name, subscriber_email);
-					
-					alert('thanks for subscribing');
-				}
+				registerRadioBloger(radiobloger);
 
-				//postData('asadasd');
-
-
-
-				
 			});
+           
 		});
 				
 				
