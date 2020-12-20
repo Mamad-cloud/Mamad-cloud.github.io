@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Bebas';
+    src : url('./fonts/BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'nanumGothic';
+    src : url('./fonts/NanumGothic-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'nazanin';
+    src : url('./fonts/B-NAZANIN.TTF');
+}
+
+body {
+    font-family: 'nanumGothic';
+}
+.heading {
+    font-family: 'Bebas';
+    font-weight: bold;
+    display: block;
+}
+
+.header {
+    border-bottom: 1px solid rgb(255, 184, 255);
+
+}
+
+.author {
+    font-size: 1em;
+    font-family: 'nanumGothic';
+}
+
+.date {
+    font-family: 'nanumGothic';
+    font-size: 0.89em;
+    color: rgb(206, 11, 108);
+}
+
+.index {
+    border-bottom: 1px solid rgb(67, 95, 255);
+    border-bottom-style: dashed;
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.index-section {
+    border-bottom: 1px solid rgb(67, 95, 255);
+    border-bottom-style: dashed;
+    padding-bottom: 1.2rem;
+
+}
+
+ol {
+   list-style: upper-roman;
+   font-size: 1.18rem;
+}
+
+ol li {
+    margin-bottom: 0.7rem;
+}
+
+ol a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ol a:hover {
+    color:rgb(206, 11, 108);
+}
+
+.persian {
+    direction: rtl;
+    font-family: 'nazanin';
+}
+
+.article-heading {
+    font-weight: bold;
+
+}
+
+.article-heading-cntnr {
+    border-bottom: 1px solid rgb(206, 11, 108);
+    padding-bottom: 1.2rem;
+}
+
+.para {
+    font-size: 1.4em;
+}
+ 
+.para-indented {
+    padding-right: 0.6rem;
+}
+
+.og-authors {
+    padding: 0.5rem;
+    direction: ltr;
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
+}
+
+.article-cntnr {
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid  rgb(206, 11, 108);
+}
+
+.list-item-cntnr {
+    padding-right: 3rem;
+
+}
+
+.list-item-cntnr li a {
+    font-size: 1.36rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+}
