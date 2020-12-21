@@ -8,8 +8,8 @@
     <title>RadioBlog | intro to deep learning</title>
 </head>
 <body>
-    <div class="container">
-        <main>
+    <div class="container-sm justify-content-center">
+        <main class="inner-container justify-content-center">
             <article>
                 <div class="row mt-5">
                     <div class="col-sm-8 m-auto header p-2">
@@ -45,114 +45,274 @@
                     </div>
                 </div>
 
-                <article class="persian" id="first">
-                    <div class="row mt-5">
-                        <div class="col-sm-8 m-auto p-2 article-cntnr">
-                            <div class="article-heading-cntnr mb-4">
-                                <h2 class="article-heading">مفاهیم اولیه یادگیری عمیق : راهنمای رادیولوژیست در درک مقاله های منتشر شده بر روی یادگیری عمیق  </h2>
-                                <h4 class="og-authors">Synho Do, PhD, Kyoung Doo Song, MD, Joo Won Chung, MD</h4>
-                            </div>
-                            
-                            <p class="para">هوش مصنوعی تا کنون در بسیاری از صنایع از جمله پزشکی (درمان) به کار رفته است .میان تکنیک های متفاوت هوش مصنوعی یادگیری عمیق بیشترین محبوبیت را در تصویر برداری پزشکی در طی چندین سال اخیر کسب کرده است .</p> 
-                            <p class="para">البته ممکن است که رادیو لو ژیستهای محترم در درک وتفسیر این مطالعات به مشکل بر بخورند زیرا که سبک مطالعات در یادگیری عمیق با سبک سنتی رادیولوژی متفاوت است . هدف این مقاله توضیح مفاهیم واصطلاحاتی است که در مقالات یادگیری عمیق رادیولوژی مرتباً به کار گرفته میشوند.</p>
-                            <p class="para">با پیشرفت روز افزون هوش مصنوعی عرصه هایی که این علم در آنها کاربرد دارد مانند : جستجو اینترنتی، ماشینهای خودرو، پردازش تکلم طبیعی و دید کامپیوتر نیز پیشرفت چشمگیری داشته اند.
-                                هوش مصنوعی در حوزه پزشکی هم استفاده شده است. و شاخه ای از علم کامپیوتر میباشد که برای طراحی سیستمهایی تلاش میکنند که قادر به انجام کارهایی باشند که به طور معمول نیازمند هوش انسانی است.</p>
-                            <p class="para">هوش مصنوعی اصطلاحی است که تکنیکهای فراوانی را در بر میگیرد. یادگیری ماشین که یکی از این تکنیکها است. یک عرصه مطالعاتی است که به کامپیوتر این توانایی را میدهد تا بدون اینکه صریحاً برنامه نویسی شوداز روی داده های فراهم شده الگوهایی را یاد بگیرند، یادگیری عمیق یک زیرشاخه از یادگیری ماشین است که از لایه های متعدد استفاده میکند تا خصوصیات سطح بالاتری را از ورودی خام به صورت پیش رونده استخراج کند.
-                                یادگیری عمیق محبوب ترین تکنیک در عرصه تصویر برداری پزشکی است، بخصوص در طبقه بندی تصاویر (IMAGE CLASSIFICATION)، تشخیص ضایعات و سگمنت کردن تصاویر .</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="persian" id="second">
-                    <div class="row mt-5">
-                        <div class="col-sm-8 m-auto p-2 article-cntnr">
-                            <div class="article-heading-cntnr mb-4">
-                                <h2 class="article-heading">یادگیری عمیق در رادیولوژی : نگاهی اجمالی به مفاهیم و نظرسنجی در مورد تکنولوژی پیشگام</h2>
-                                <h4 class="og-authors">Maciej A. Mazurowski , Mateusz Buda, Ashirbani Saha, Mustafa R. Bashir</h4>
-                            </div>
-                            <p class="para">یادگیری عمیق شاخه ای از هوش مصنوعی است که از شبکه هایی از واحدهای بهم پیوند خورده ساده تشکیل شده است، که با استفاده از آنها میتوان حل مسایل پیچیده از راه استخراج الگو های موجود در داده را آسانتر کرد.</p>
-                            <p class="para">الگوریتم های یادگیری عمیق عملکرد پیشگامانه ای در کارهای تخصصی مختلفی داشته اند، بخصوص کارهایی که مربوط به تصاویر هستند. عملکرد این الگوریتمها اغلب در حد یا حتی بهتر از انسان بوده است.
-                                باتوجه به اینکه در عرصه پزشکی رادیولوژِ بیشتر بر روی استخراج اطلاعات مفید از تصاویر تکیه میکنند، بنابراین طبیعی است که از یادگیری عمیق استفاده کنیم.</p>
-                            <h3 >در مقاله ای کامل به این موضوعات خواهیم پرداخت:</h5>
-                            <div class="list-item-cntnr">
-
+                <div id="first" class="article-cntnr">
+                    <article id="first-en">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">Basics of Deep Learning: A Radiologist’s Guide to
+                                        Understanding Published Radiology Articles on Deep
+                                        Learning</h2>
+                                    <h4 class="og-authors">Synho Do, PhD, Kyoung Doo Song, MD, Joo Won Chung, MD</h4>
+                                </div>
                                 
-                                <ol>
-                                    <li><a href="#">مرور واقعیت بالینی رادیولوژی</a></li>
-                                    <li><a href="#">بحث در مورد فرصتهایی برای پیاده سازی الگوریتمهای یادگیری عمیق</a></li>
-                                    <li><a href="#">معرفی مفاهیم پایه یادگیری عمیق از جمله شبکه های عصبی کانالوشن (CONVOLUTIONAL</a></li>
-                                    <li><a href="#">نظرسنجی در مورد کاربرد یادگیری عمیق در رادیولوژی</a></li>
-                                    <li><a href="#">طبقه بندی مطالعات براساس کاربرد بخصوصی که در حل مسایل دارند</a></li>
-                                    <li><a href="#">مرور بازه بزرگی از الگوریتمهای یادگیری عمیق به کار گرفته شده</a></li>
-                                    <li><a href="#">بحث در مورد فرصتها و چالشهای به کارگیری یادگیری عمیق در رادیولوژی</a></li>
-                                </ol>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </article>
-
-                <article class="persian" id="third">
-                    <div class="row mt-5">
-                        <div class="col-sm-8 m-auto p-2 article-cntnr">
-                            <div class="article-heading-cntnr mb-4">
-                                <h2 class="article-heading">مدل یادگیری عمیق پیش بینی  COVID-19 با استفاده از تصاویر Chest XR</h2>
-                                <h4 class="og-authors">Mohd Zulfaezal Che Azemin, Radhiana Hassan , Mohd Izzuddin Mohd Tamrin ,
-                                    and Mohd Adli Md AliD</h4>
-                            </div>
-                            <p class="para">جزء کلیدی در تحقیقات یادگیری عمیق در دسترس بودن گروه های داده های تمرینی است . در صورت محدود بودن تعداد تصاویر  Chest XR که در اختیار عموم قرار دارد . عمومی سازی و نیرومندی الگوریتم یادگیری عمیق جهت تشخیص COVID-19 زیر سؤال می رود .</p>
-                            <p class="para">هدف ما این بوده که از هزاران تصویر آماده Chest با یافته های بالینی مربوط به COVID-19 به عنوان داده های تمرینی برای این مدل استفاده کنیم و برای داده های تستی که عملکرد مدل علیه آنها مقایسه می شود از تصاویری استفاده شده که مربوط به موارد تأیید شده COVID-19 می باشند و جزو داده های تمرینی نیستند</p>
-                            <p class="para">ما از یک مدل یادگیری عمیق که بر روی شبکه عصبی کانولوشنال ResNet-101 که قبلا توسط میلیون ها تصویر برای تشخیص اشیاء تمرین داده شده بود استفاده کردیم سپس آن را دوباره تمرین دادیم تا بتوانیم ابنورمالیته های موجود در تصویر Chest را تشخیص بدهیم .</p>
-                            <h3>عملکرد مدل در عناوین مختلف :</h3>
-                            <div class="list-item-cntnr">
-                                <ol>
-                                    <li><a href="#">مساحت زیر نمودار عملکرد گیرنده : 0.82</a></li>
-                                    <li><a href="#">حساسیت :  %77.3</a></li>
-                                    <li><a href="#">اختصاصی بودن :  %71.8</a></li>
-                                    <li><a href="#">دقت :  %71.9</a></li>
-                                </ol>
+                                <p class="para">Artificial intelligence has been applied to many industries, including medicine. Among the various techniques in artificial
+                                    intelligence, deep learning has attained the highest popularity in medical imaging in recent years. Many articles on deep
+                                    learning have been published in radiologic journals. However, radiologists may have difficulty in understanding and interpreting
+                                    these studies because the study methods of deep learning differ from those of traditional radiology. This review article aims
+                                    to explain the concepts and terms that are frequently used in deep learning radiology articles, facilitating general radiologists’
+                                    understanding.</p> 
+                                
                             </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
 
-                <article class="persian" id="fourth">
-                    <div class="row mt-5">
-                        <div class="col-sm-8 m-auto p-2 article-cntnr">
-                            <div class="article-heading-cntnr mb-4">
-                                <h2 class="article-heading">سگمنت کردن اتوماتیک ابدومینال تصاویر CT اسکن توسط مدل یادگیری عمیق جهت آنالیز ترکیب بدن</h2>
-                                <h4 class="og-authors">Alexander D. Weston, BS • Panagiotis Korfiatis, PhD • Timothy L. Kline, PhD • Kenneth A. Philbrick, PhD •
-                                    Petro Kostandy, MD • Tomas Sakinis, MD • Motokazu Sugimoto, MD • Naoki Takahashi, MD •
-                                    Bradley J. Erickson, MD, PhD</h4>
+                    <article class="persian" id="first-fa">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">مفاهیم اولیه یادگیری عمیق : راهنمای رادیولوژیست در درک مقاله های منتشر شده بر روی یادگیری عمیق  </h2>
+                                    <h4 class="og-authors">Synho Do, PhD, Kyoung Doo Song, MD, Joo Won Chung, MD</h4>
+                                </div>
+                                
+                                <p class="para">هوش مصنوعی تا کنون در بسیاری از صنایع از جمله پزشکی (درمان) به کار رفته است .میان تکنیک های متفاوت هوش مصنوعی یادگیری عمیق بیشترین محبوبیت را در تصویر برداری پزشکی در طی چندین سال اخیر کسب کرده است .</p> 
+                                <p class="para">البته ممکن است که رادیو لو ژیستهای محترم در درک وتفسیر این مطالعات به مشکل بر بخورند زیرا که سبک مطالعات در یادگیری عمیق با سبک سنتی رادیولوژی متفاوت است . هدف این مقاله توضیح مفاهیم واصطلاحاتی است که در مقالات یادگیری عمیق رادیولوژی مرتباً به کار گرفته میشوند.</p>
+                                <p class="para">با پیشرفت روز افزون هوش مصنوعی عرصه هایی که این علم در آنها کاربرد دارد مانند : جستجو اینترنتی، ماشینهای خودرو، پردازش تکلم طبیعی و دید کامپیوتر نیز پیشرفت چشمگیری داشته اند.
+                                    هوش مصنوعی در حوزه پزشکی هم استفاده شده است. و شاخه ای از علم کامپیوتر میباشد که برای طراحی سیستمهایی تلاش میکنند که قادر به انجام کارهایی باشند که به طور معمول نیازمند هوش انسانی است.</p>
+                                <p class="para">هوش مصنوعی اصطلاحی است که تکنیکهای فراوانی را در بر میگیرد. یادگیری ماشین که یکی از این تکنیکها است. یک عرصه مطالعاتی است که به کامپیوتر این توانایی را میدهد تا بدون اینکه صریحاً برنامه نویسی شوداز روی داده های فراهم شده الگوهایی را یاد بگیرند، یادگیری عمیق یک زیرشاخه از یادگیری ماشین است که از لایه های متعدد استفاده میکند تا خصوصیات سطح بالاتری را از ورودی خام به صورت پیش رونده استخراج کند.
+                                    یادگیری عمیق محبوب ترین تکنیک در عرصه تصویر برداری پزشکی است، بخصوص در طبقه بندی تصاویر (IMAGE CLASSIFICATION)، تشخیص ضایعات و سگمنت کردن تصاویر .</p>
                             </div>
-
-                            <p class="para"><strong>هدف از این مقاله :</strong> <br> <p class="para para-indented">توسعه و ارزیابی یک الگوریتم کاملا اتوماتیک برای جداسازی ابدومن از تصاویر CT جهت پیدا کردن ترکیب بدن .</p> </p>
-                            <p class="para"><strong>ابزار و متدها :</strong> <br> <p class="para para-indented">جهت انجام این مطالعه گذشته نگرانه : یک شبکه عصبی در هم تنیده ( کانولوشینال ) بروی مدل U-Net به این صورت تمرین داده شد که یک گروه داده شامل 2430 تصویر دو بعدی CT به عنوان داده تمرینی به مدل داده شده و سپس بروی یک گروه داده شامل 270 آزمایش CT تست شد . بعد ها توسط یک گروه داده شامل 2369 بیمار مبتلا به کارسینوم سلول های کبدی ( HCC ) دوباره تست شد آزمایشات CT در طی سالهای 1997 تا 2015 تهیه شده بودند . میانه سن افراد آزمایش شده 67 سال بوده برای آقایان 64 سال بود ( در بازه 29 – 94 سال ) و برای خانمها 66 سال ( 31 – 97 ) تفاوت در عملکرد سگمنت کردن توسط آنالیز دو طرفه واریانس و تصحیح بونفرونس ارزیابی شده است .</p></p>
-                            <p class="para"><strong>نتایج : </strong> <br> <p class="para para-indented">در مقایسه با سگمنت کردن رفرنس امتیازات مدل استفاده شدن در این مطالعلات به این صورت بود   ( انحرافت معیار ± میانه )</p></p>
-                            <h4>در داده های تستی اولیه برای کمپارتمان های : </h4>
-                            <div class="list-item-cntnr">
-                                <ol>
-                                    <li><a href="#">زیر جلدی : 0.03 ± 0.98</a></li>
-                                    <li><a href="#">ماهیچه ای : 0.02 ± 0.97</a></li>
-                                    <li><a href="#">چربی احشایی : 0.01 ± 0.97</a></li>
-                                </ol>
-                            </div>
-
-                            <h4>داده های مربوط به بیماران HCC برای کمپارتمان های : </h4>
-                            <div class="list-item-cntnr">
-                                <ol>
-                                    <li><a href="#">زیر جلدی : 0.05 ± 0.94</a></li>
-                                    <li><a href="#">ماهیچه ای : 0.04 ± 0.92</a></li>
-                                    <li><a href="#">چربی احشایی : 0.02 ± 0.98</a></li>
-                                </ol>
-                            </div>
-
-                            <p class="para"><p class="para para-indented">عملکرد مشاهده شده در حد و یا حتی بیشتر از سگمنت سازی دستی توسط متخصص می باشد .</p></p>
-                            <p class="para"><strong>استنتاج : </strong> <br> <p class="para para-indented">عملکرد مدل در هر دو گروه داده تستی در حد و یا حتی بیشتر از سگمنت سازی دستی توسط متخصص بوده است . 
-                                مدل به خوبی سطوح مختلفی از ابدومن را سگمنت کرده و درآینده ممکن است توانایی سگمنت سازی کل بدن در آزمایشات CT سه بعدی را داشته باشد</p></p>
                         </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
+
+                <div id="second" class="article-cntnr">
+                    <article id="second-en">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">Deep learning in radiology: an overview of the concepts
+                                        and a survey of the state of the art</h2>
+                                    <h4 class="og-authors">Maciej A. Mazurowski , Mateusz Buda, Ashirbani Saha, Mustafa R. Bashir</h4>
+                                </div>
+                                <p class="para">Deep learning is a branch of artificial intelligence where networks of simple interconnected
+                                    units are used to extract patterns from data in order to solve complex problems. Deep learning
+                                    algorithms have shown groundbreaking performance in a variety of sophisticated tasks, especially
+                                    those related to images. They have often matched or exceeded human performance. Since the
+                                    medical field of radiology mostly relies on extracting useful information from images, it is a very
+                                    natural application area for deep learning, and research in this area has rapidly grown in recent
+                                    years.</p>
+                                <h4>In this article : </h4>
+                                <div class="list-item-cntnr">
+    
+                                    
+                                    <ol>
+                                        <li><a>we review the clinical reality of radiology.</a></li>
+                                        <li><a>discuss the opportunities
+                                            for application of deep learning algorithms.</a></li>
+                                        <li><a>We also introduce basic concepts of deep learning
+                                            including convolutional neural networks.</a></li>
+                                        <li><a>Then, we present a survey of the research in deep
+                                            learning applied to radiology.</a></li>
+                                        <li><a>We organize the studies by the types of specific tasks that they
+                                            attempt to solve.</a></li>
+                                        <li><a>review the broad range of utilized deep learning algorithms.</a></li>
+                                        <li><a>Finally, we
+                                            briefly discuss opportunities and challenges for incorporating deep learning in the radiology
+                                            practice of the future.</a></li>
+                                    </ol>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+
+
+
+                    <article class="persian" id="second-fa">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">یادگیری عمیق در رادیولوژی : نگاهی اجمالی به مفاهیم و نظرسنجی در مورد تکنولوژی پیشگام</h2>
+                                    <h4 class="og-authors">Maciej A. Mazurowski , Mateusz Buda, Ashirbani Saha, Mustafa R. Bashir</h4>
+                                </div>
+                                <p class="para">یادگیری عمیق شاخه ای از هوش مصنوعی است که از شبکه هایی از واحدهای بهم پیوند خورده ساده تشکیل شده است، که با استفاده از آنها میتوان حل مسایل پیچیده از راه استخراج الگو های موجود در داده را آسانتر کرد.</p>
+                                <p class="para">الگوریتم های یادگیری عمیق عملکرد پیشگامانه ای در کارهای تخصصی مختلفی داشته اند، بخصوص کارهایی که مربوط به تصاویر هستند. عملکرد این الگوریتمها اغلب در حد یا حتی بهتر از انسان بوده است.
+                                    باتوجه به اینکه در عرصه پزشکی رادیولوژِ بیشتر بر روی استخراج اطلاعات مفید از تصاویر تکیه میکنند، بنابراین طبیعی است که از یادگیری عمیق استفاده کنیم.</p>
+                                <h3 >در مقاله ای کامل به این موضوعات خواهیم پرداخت:</h5>
+                                <div class="list-item-cntnr">
+    
+                                    
+                                    <ol>
+                                        <li><a href="#">مرور واقعیت بالینی رادیولوژی</a></li>
+                                        <li><a href="#">بحث در مورد فرصتهایی برای پیاده سازی الگوریتمهای یادگیری عمیق</a></li>
+                                        <li><a href="#">معرفی مفاهیم پایه یادگیری عمیق از جمله شبکه های عصبی کانالوشن (CONVOLUTIONAL</a></li>
+                                        <li><a href="#">نظرسنجی در مورد کاربرد یادگیری عمیق در رادیولوژی</a></li>
+                                        <li><a href="#">طبقه بندی مطالعات براساس کاربرد بخصوصی که در حل مسایل دارند</a></li>
+                                        <li><a href="#">مرور بازه بزرگی از الگوریتمهای یادگیری عمیق به کار گرفته شده</a></li>
+                                        <li><a href="#">بحث در مورد فرصتها و چالشهای به کارگیری یادگیری عمیق در رادیولوژی</a></li>
+                                    </ol>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="third" class="article-cntnr">
+
+                    <article id="third-en">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">COVID-19 Deep Learning Prediction Model Using Publicly
+                                        Available Radiologist-Adjudicated Chest X-Ray Images as
+                                        Training Data: Preliminary Findings<h2>
+                                    <h4 class="og-authors">Mohd Zulfaezal Che Azemin, Radhiana Hassan , Mohd Izzuddin Mohd Tamrin ,
+                                        and Mohd Adli Md AliD</h4>
+                                </div>
+                                <p class="para">The key component in deep learning research is the availability of training data sets. With a limited number of publicly available
+                                    COVID-19 chest X-ray images, the generalization and robustness of deep learning models to detect COVID-19 cases developed
+                                    based on these images are questionable.</p>
+                                <p class="para">We aimed to use thousands of readily available chest radiograph images with clinical
+                                    findings associated with COVID-19 as a training data set, mutually exclusive from the images with confirmed COVID-19 cases,
+                                    which will be used as the testing data set.</p>
+                                <p class="para">We used a deep learning model based on the ResNet-101 convolutional neural
+                                    network architecture, which was pretrained to recognize objects from a million of images and then retrained to detect
+                                    abnormality in chest X-ray images.</p>
+                                <h5>The performance of the model in terms of :</h5>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a>area under the receiver operating curve : 0.82</a></li>
+                                        <li><a>sensitivity : 77.3%</a></li>
+                                        <li><a>specificity : 71.8%</a></li>
+                                        <li><a>accuracy : 71.9%</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="persian" id="third-fa">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">مدل یادگیری عمیق پیش بینی <span class="inline-en"> COVID-19</span> با استفاده از تصاویر <span class="inline-en">Chest XR</span> </h2>
+                                    <h4 class="og-authors">Mohd Zulfaezal Che Azemin, Radhiana Hassan , Mohd Izzuddin Mohd Tamrin ,
+                                        and Mohd Adli Md AliD</h4>
+                                </div>
+                                <p class="para">جزء کلیدی در تحقیقات یادگیری عمیق در دسترس بودن گروه های داده های تمرینی است . در صورت محدود بودن تعداد تصاویر  <span class="inline-en">Chest XR</span> که در اختیار عموم قرار دارد . عمومی سازی و نیرومندی الگوریتم یادگیری عمیق جهت تشخیص <span class="inline-en"> COVID-19</span> زیر سؤال می رود .</p>
+                                <p class="para">هدف ما این بوده که از هزاران تصویر آماده <span class="inline-en">Chest</span> با یافته های بالینی مربوط به <span class="inline-en"> COVID-19</span> به عنوان داده های تمرینی برای این مدل استفاده کنیم و برای داده های تستی که عملکرد مدل علیه آنها مقایسه می شود از تصاویری استفاده شده که مربوط به موارد تأیید شده <span class="inline-en"> COVID-19</span> می باشند و جزو داده های تمرینی نیستند</p>
+                                <p class="para">ما از یک مدل یادگیری عمیق که بر روی شبکه عصبی کانولوشنال <span class="inline-en">ResNet-101</span> که قبلا توسط میلیون ها تصویر برای تشخیص اشیاء تمرین داده شده بود استفاده کردیم سپس آن را دوباره تمرین دادیم تا بتوانیم ابنورمالیته های موجود در تصویر <span class="inline-en">Chest</span> را تشخیص بدهیم .</p>
+                                <h3>عملکرد مدل در عناوین مختلف :</h3>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a href="#">مساحت زیر نمودار عملکرد گیرنده : 0.82</a></li>
+                                        <li><a href="#">حساسیت :  %77.3</a></li>
+                                        <li><a href="#">اختصاصی بودن :  %71.8</a></li>
+                                        <li><a href="#">دقت :  %71.9</a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div id="fourth" class="article-cntnr">
+                    <article id="fourth-en">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">Automated Abdominal Segmentation of
+                                        CT Scans for Body Composition Analysis Using
+                                        Deep Learning</h2>
+                                    <h4 class="og-authors">Alexander D. Weston, BS • Panagiotis Korfiatis, PhD • Timothy L. Kline, PhD • Kenneth A. Philbrick, PhD •
+                                        Petro Kostandy, MD • Tomas Sakinis, MD • Motokazu Sugimoto, MD • Naoki Takahashi, MD •
+                                        Bradley J. Erickson, MD, PhD</h4>
+                                </div>
+    
+                                <p class="para"><strong>Purpose :</strong> <br> <p class="para para-indented">To develop and evaluate a fully automated algorithm for segmenting the abdomen from CT to quantify body
+                                    composition.</p> </p>
+                                <p class="para"><strong>Materials and Methods : </strong> <br> <p class="para para-indented">For this retrospective study, a convolutional neural network based on the U-Net architecture was trained to
+                                    perform abdominal segmentation on a data set of 2430 two-dimensional CT examinations and was tested on 270 CT examina-
+                                    tions. It was further tested on a separate data set of 2369 patients with hepatocellular carcinoma (HCC). CT examinations were
+                                    performed between 1997 and 2015. The mean age of patients was 67 years; for male patients, it was 67 years (range, 29–94 years),
+                                    and for female patients, it was 66 years (range, 31–97 years). Differences in segmentation performance were assessed by using two-
+                                    way analysis of variance with Bonferroni correction.</p></p>
+                                <p class="para"><strong>Results : </strong> <br> <p class="para para-indented">Compared with reference segmentation, the model for this study achieved Dice scores (mean ± standard deviation) of :</p></p>
+                                <h4>in the test set : </h4>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a>subcutaneous : 0.03 ± 0.98</a></li>
+                                        <li><a>muscle : 0.02 ± 0.97</a></li>
+                                        <li><a>visceral adipose : 0.01 ± 0.97</a></li>
+                                    </ol>
+                                </div>
+    
+                                <h4>in the HCC data set : </h4>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a>subcutaneous : 0.05 ± 0.94</a></li>
+                                        <li><a>muscle : 0.04 ± 0.92</a></li>
+                                        <li><a>visceral adipose : 0.02 ± 0.98</a></li>
+                                    </ol>
+                                </div>
+    
+                                <p class="para"><p class="para para-indented">Performance met or exceeded that of expert
+                                    manual segmentation.</p></p>
+                                <p class="para"><strong>Conclusion : </strong> <br> <p class="para para-indented">Model performance met or exceeded the accuracy of expert manual segmentation of CT examinations for both the test
+                                    data set and the hepatocellular carcinoma data set. The model generalized well to multiple levels of the abdomen and may be ca-
+                                    pable of fully automated quantification of body composition metrics in three-dimensional CT examinations.</p></p>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="persian" id="fourth-fa">
+                        <div class="row mt-5">
+                            <div class="col-sm-8 m-auto p-2">
+                                <div class="article-heading-cntnr mb-4">
+                                    <h2 class="article-heading">سگمنت کردن اتوماتیک ابدومینال تصاویر <span class="inline-en">CT</span> اسکن توسط مدل یادگیری عمیق جهت آنالیز ترکیب بدن</h2>
+                                    <h4 class="og-authors">Alexander D. Weston, BS • Panagiotis Korfiatis, PhD • Timothy L. Kline, PhD • Kenneth A. Philbrick, PhD •
+                                        Petro Kostandy, MD • Tomas Sakinis, MD • Motokazu Sugimoto, MD • Naoki Takahashi, MD •
+                                        Bradley J. Erickson, MD, PhD</h4>
+                                </div>
+    
+                                <p class="para"><strong>هدف از این مقاله :</strong> <br> <p class="para para-indented">توسعه و ارزیابی یک الگوریتم کاملا اتوماتیک برای جداسازی ابدومن از تصاویر <span class="inline-en">CT</span> جهت پیدا کردن ترکیب بدن .</p> </p>
+                                <p class="para"><strong>ابزار و متدها :</strong> <br> <p class="para para-indented">جهت انجام این مطالعه گذشته نگرانه : یک شبکه عصبی در هم تنیده ( کانولوشینال ) بروی مدل <span class="inline-en">U-Net</span> به این صورت تمرین داده شد که یک گروه داده شامل 2430 تصویر دو بعدی <span class="inline-en">CT</span> به عنوان داده تمرینی به مدل داده شده و سپس بروی یک گروه داده شامل 270 آزمایش <span class="inline-en">CT</span> تست شد . بعد ها توسط یک گروه داده شامل 2369 بیمار مبتلا به کارسینوم سلول های کبدی ( <span class="inline-en">HCC</span> ) دوباره تست شد آزمایشات <span class="inline-en">CT</span> در طی سالهای 1997 تا 2015 تهیه شده بودند . میانه سن افراد آزمایش شده 67 سال بوده برای آقایان 64 سال بود ( در بازه 29 – 94 سال ) و برای خانمها 66 سال ( 31 – 97 ) تفاوت در عملکرد سگمنت کردن توسط آنالیز دو طرفه واریانس و تصحیح بونفرونس ارزیابی شده است .</p></p>
+                                <p class="para"><strong>نتایج : </strong> <br> <p class="para para-indented">در مقایسه با سگمنت کردن رفرنس امتیازات مدل استفاده شدن در این مطالعلات به این صورت بود   ( انحرافت معیار ± میانه )</p></p>
+                                <h4>در داده های تستی اولیه برای کمپارتمان های : </h4>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a>زیر جلدی : 0.03 ± 0.98</a></li>
+                                        <li><a>ماهیچه ای : 0.02 ± 0.97</a></li>
+                                        <li><a>چربی احشایی : 0.01 ± 0.97</a></li>
+                                    </ol>
+                                </div>
+    
+                                <h4>داده های مربوط به بیماران <span class="inline-en">HCC</span> برای کمپارتمان های : </h4>
+                                <div class="list-item-cntnr">
+                                    <ol>
+                                        <li><a>زیر جلدی : 0.05 ± 0.94</a></li>
+                                        <li><a>ماهیچه ای : 0.04 ± 0.92</a></li>
+                                        <li><a>چربی احشایی : 0.02 ± 0.98</a></li>
+                                    </ol>
+                                </div>
+    
+                                <p class="para"><p class="para para-indented">عملکرد مشاهده شده در حد و یا حتی بیشتر از سگمنت سازی دستی توسط متخصص می باشد .</p></p>
+                                <p class="para"><strong>استنتاج : </strong> <br> <p class="para para-indented">عملکرد مدل در هر دو گروه داده تستی در حد و یا حتی بیشتر از سگمنت سازی دستی توسط متخصص بوده است . 
+                                    مدل به خوبی سطوح مختلفی از ابدومن را سگمنت کرده و درآینده ممکن است توانایی سگمنت سازی کل بدن در آزمایشات <span class="inline-en">CT</span> سه بعدی را داشته باشد</p></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                
+
+                
+
+                
                 
                 
             </article>
